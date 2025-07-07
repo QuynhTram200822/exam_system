@@ -383,3 +383,82 @@ a {
     min-width: 600px;
   }
 }
+/* footer */
+.footer {
+  background-color: #016955;
+  color: #ffffff;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer .ft_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer .ft_left {
+  flex: 1 1 250px;
+}
+
+.footer .ft_left .ft_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .ft_left .ft_logo img {
+  height: 60px;
+}
+
+.footer .ft_contact {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer .ft_contact p {
+  margin: 8px 0;
+  line-height: 1.6;
+  align-items: center;
+}
+
+.footer .ft_contact p i {
+font-size: 17px;
+}
+
+.footer .ft_contact p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer .ft_contact p a:hover {
+  color: #349914;
+}
+
+.footer .ft_info {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .footer .ft_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .ft_left,
+  .footer .ft_contact {
+    width: 100%;
+  }
+
+  .footer .ft_contact p {
+    font-size: 14px;
+  }
+}
+
