@@ -294,6 +294,10 @@ a {
 .custom-table td:nth-child(2) {
   width: 25%;
 }
+.custom-table td:nth-child(2) {
+    width: 25%;
+    text-align: left;
+}
 .custom-table th:nth-child(3) {
   width: 25%;
 }
@@ -306,6 +310,7 @@ a {
   text-align: center;
   overflow: hidden;
   position: relative;
+  margin-bottom: 50px;
 }
 .system-demo::before {
   content: "";
@@ -399,10 +404,6 @@ a {
   gap: 30px;
 }
 
-.footer .ft_left {
-  flex: 1 1 250px;
-}
-
 .footer .ft_left .ft_logo {
   display: flex;
   align-items: center;
@@ -438,7 +439,7 @@ font-size: 17px;
 }
 
 .footer .ft_info {
-  border-top: 1px solid #444;
+  border-top: 1px solid #bbb;
   margin-top: 30px;
   padding-top: 20px;
   text-align: center;
@@ -450,15 +451,40 @@ font-size: 17px;
   .footer .ft_wrap {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0;
   }
 
-  .footer .ft_left,
+  .footer .ft_left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .footer .ft_contact {
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
   }
 
   .footer .ft_contact p {
+    display: flex;
+    align-items: center;
     font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .footer .ft_contact p i {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+
+  .footer .ft_info {
+    font-size: 12px;
+    padding: 15px 10px 0;
   }
 }
 
+@media (max-width: 438px) {
+.footer .ft_left .ft_logo img {
+    height: 40px;
+}
+}
